@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextConversionType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese GAR o RAG"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/editTextAngle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el ángulo"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editTextConversionType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        app:layout_constraintTop_toBottomOf="@id/editTextAngle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonConvert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
